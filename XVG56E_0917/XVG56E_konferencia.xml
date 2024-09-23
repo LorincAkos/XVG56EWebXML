@@ -1,18 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <konferenciak>
     <konferencia id="01">
-        <cim konfcim=""/>
+        <cim>Nemzetközi Tudományos Konferencia 2024</cim>
         <eloado>
-            <nev />
-            <adoszam />
-            <lakcim />
+            <nev>Dr. Kovács Péter</nev>
+            <adoszam>12345678-1-12</adoszam>
+            <lakcim>1010 Budapest, Kossuth Lajos utca 1.</lakcim>
         </eloado>
-        <helyszin />
-        <datum />
+        <helyszin>Budapest Kongresszusi Központ</helyszin>
+        <datum>2024-10-15</datum>
         <hallgatok>
             <hallgato>
-                <nev />
-                <lakcim />
+                <nev>Nagy Anna</nev>
+                <lakcim>1145 Budapest, Csokonai utca 12.</lakcim>
+            </hallgato>
+            <hallgato>
+                <nev>Kiss Gergő</nev>
+                <lakcim>1037 Budapest, Árpád utca 9.</lakcim>
             </hallgato>
         </hallgatok>
     </konferencia>
