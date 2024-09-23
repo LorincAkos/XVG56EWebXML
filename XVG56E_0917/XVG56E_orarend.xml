@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<xvg56e_orarend>
+    <ora id="01" tipus="eloadas">
+        <targy targynev="web_technologiak_1" />
+        <idopont>
+            <nap napnev="hetfo" />
+            <tol kezdes="10_00" />
+            <ig vegzes="12_00" />
+        </idopont>
+        <helyszin teremnev="1_A2_fsz" />
+        <oktato oktatonev="Agardi_Anita" />
+        <szak szaknev="mernokinformatika" />
+    </ora>
+
+    <ora id="02" tipus="gyakorlat">
+        <targy targynev="web_technologiak_1" />
+        <idopont>
+            <nap napnev="hetfo" />
+            <tol kezdes="14_00" />
+            <ig vegzes="16_00" />
+        </idopont>
+        <helyszin teremnev="in_101" />
+        <oktato oktatonev="Agardi_Anita" />
+        <szak szaknev="mernokinformatika" />
+    </ora>
+
+    <ora id="03" tipus="eloadas">
+        <targy targynev="mobil_programozási_alapok" />
+        <idopont>
+            <nap napnev="hetfo" />
+            <tol kezdes="16_00" />
+            <ig vegzes="18_00" />
+        </idopont>
+        <helyszin teremnev="in_101" />
+        <oktato oktatonev="Agardi_Anita" />
+        <szak szaknev="mernokinformatika" />
+    </ora>
+
+    <ora id="04" tipus="gyakorlat">
+        <targy targynev="mobil_programozási_alapok" />
+        <idopont>
+            <nap napnev="hetfo" />
+            <tol kezdes="18_00" />
+            <ig vegzes="20_00" />
+        </idopont>
+        <helyszin teremnev="in_101" />
+        <oktato oktatonev="Agardi_Anita" />
+        <szak szaknev="mernokinformatika" />
+    </ora>
+
+    <ora id="05" tipus="gyakorlat">
+        <targy targynev="webes_adatkezelo_kornyezet" />
+        <idopont>
+            <nap napnev="kedd" />
+            <tol kezdes="12_00" />
+            <ig vegzes="14_00" />
+        </idopont>
+        <helyszin teremnev="in_103" />
+        <oktato oktatonev="dr_Bednarik_Laszlo" />
+        <szak szaknev="mernokinformatika" />
+    </ora>
+
+    <ora id="06" tipus="gyakorlat">
+        <targy targynev="unix_rendszergazda" />
+        <idopont>
+            <nap napnev="kedd" />
+            <tol kezdes="17_00" />
+            <ig vegzes="19_00" />
+        </idopont>
+        <helyszin teremnev="in_202" />
+        <oktato oktatonev="dr_Baksa_attila" />
+        <szak szaknev="mernokinformatika" />
+    </ora>
+
+    <ora id="07" tipus="eloadas">
+        <targy targynev="unix_rendszergazda" />
+        <idopont>
+            <nap napnev="szerda" />
+            <tol kezdes="08_00" />
+            <ig vegzes="10_00" />
+        </idopont>
+        <helyszin teremnev="in_102" />
+        <oktato oktatonev="dr_Baksa_attila" />
+        <szak szaknev="mernokinformatika" />
+    </ora>
+
+    <ora id="08" tipus="gyakorlat">
+        <targy targynev="mesterseges_inteligencia" />
+        <idopont>
+            <nap napnev="szerda" />
+            <tol kezdes="10_00" />
+            <ig vegzes="12_00" />
+        </idopont>
+        <helyszin teremnev="X_a1_2em" />
+        <oktato oktatonev="Fazekas_LEvente" />
+        <szak szaknev="mernokinformatika" />
+    </ora>
+    
+    <ora id="09" tipus="eloadas">
+        <targy targynev="webes_adatkezelo_kornyezet" />
+        <idopont>
+            <nap napnev="szerda" />
+            <tol kezdes="14_00" />
+            <ig vegzes="16_00" />
+        </idopont>
+        <helyszin teremnev="in_102" />
+        <oktato oktatonev="dr_Kovacs_Laszlo" />
+        <szak szaknev="mernokinformatika" />
+    </ora>
+    
+    <ora id="10" tipus="eloadas">
+        <targy targynev="mesterseges_inteligencia" />
+        <idopont>
+            <nap napnev="szerda" />
+            <tol kezdes="16_00" />
+            <ig vegzes="18_00" />
+        </idopont>
+        <helyszin teremnev="XXXII_a1_mfsz" />
+        <oktato oktatonev="Kunne_dr_Tamasi_Judit" />
+        <szak szaknev="mernokinformatika" />
+    </ora>
+</xvg56e_orarend>

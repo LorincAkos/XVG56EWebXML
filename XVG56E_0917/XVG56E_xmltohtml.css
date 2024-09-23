@@ -1,0 +1,28 @@
+table, tr,th, td{
+    border-width: 1px;
+    border:solid;
+    border-color: black;
+    border-collapse: collapse;
+    
+}
+
+tr{
+    background-color: mediumblue;
+}
+td{
+    background-color: aqua;
+}
+
+.table_container{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-left: 25%;
+}
+
+.title_container{
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}
