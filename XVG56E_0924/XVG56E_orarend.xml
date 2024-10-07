@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE xvg56e_orarend SYSTEM "XVG56E_orarend.dtd">
+
+<xvg56e_orarend>
+    <ora id="o01" tipus="eloadas">
+        <targy>web_technologiak_1</targy>
+        <idopont>
+            <nap>hetfo</nap>
+            <tol>10_00 </tol>
+            <ig>12_00</ig>
+        </idopont>
+        <helyszin>I_A2_fsz</helyszin>
+        <oktato>Agardi_Anita</oktato>
+        <szak>mernokinformatika</szak>
+    </ora>
+
+    <ora id="o02" tipus="gyakorlat">
+        <targy>web_technologiak_1</targy>
+        <idopont>
+            <nap>hetfo</nap>
+            <tol>14_00 </tol>
+            <ig>16_00</ig>
+        </idopont>
+        <helyszin>in_101</helyszin>
+        <oktato>Agardi_Anita</oktato>
+        <szak>mernokinformatika</szak>
+    </ora>
+
+    <ora id="o03" tipus="eloadas">
+        <targy>mobil_programozási_alapok</targy>
+        <idopont>
+            <nap>hetfo</nap>
+            <tol>16_00 </tol>
+            <ig>18_00</ig>
+        </idopont>
+        <helyszin>in_101</helyszin>
+        <oktato>Agardi_Anita</oktato>
+        <szak>mernokinformatika</szak>
+    </ora>
+
+    <ora id="o04" tipus="gyakorlat">
+        <targy>mobil_programozási_alapok</targy>
+        <idopont>
+            <nap>hetfo</nap>
+            <tol>18_00 </tol>
+            <ig>20_00</ig>
+        </idopont>
+        <helyszin>in_101</helyszin>
+        <oktato>Agardi_Anita</oktato>
+        <szak>mernokinformatika</szak>
+    </ora>
+
+    <ora id="o05" tipus="gyakorlat">
+        <targy>webes_adatkezelo_kornyezet</targy>
+        <idopont>
+            <nap>kedd</nap>
+            <tol>12_00 </tol>
+            <ig>14_00</ig>
+        </idopont>
+        <helyszin>in_103</helyszin>
+        <oktato>dr_Bednarik_Laszlo</oktato>
+        <szak>mernokinformatika</szak>
+    </ora>
+
+    <ora id="o06" tipus="gyakorlat">
+        <targy>unix_rendszergazda</targy>
+        <idopont>
+            <nap>kedd</nap>
+            <tol>17_00 </tol>
+            <ig>19_00</ig>
+        </idopont>
+        <helyszin>in_202</helyszin>
+        <oktato>dr_Baksa_attila</oktato>
+        <szak>mernokinformatika</szak>
+    </ora>
+
+    <ora id="o07" tipus="eloadas">
+        <targy>unix_rendszergazda</targy>
+        <idopont>
+            <nap>szerda</nap>
+            <tol>08_00 </tol>
+            <ig>10_00</ig>
+        </idopont>
+        <helyszin>in_102</helyszin>
+        <oktato>dr_Baksa_attila</oktato>
+        <szak>mernokinformatika</szak>
+    </ora>
+
+    <ora id="o08" tipus="gyakorlat">
+        <targy>mesterseges_inteligencia</targy>
+        <idopont>
+            <nap>szerda</nap>
+            <tol>10_00 </tol>
+            <ig>12_00</ig>
+        </idopont>
+        <helyszin>X_a1_2em</helyszin>
+        <oktato>Fazekas_Levente</oktato>
+        <szak>mernokinformatika</szak>
+    </ora>
+
+    <ora id="o09" tipus="eloadas">
+        <targy>webes_adatkezelo_kornyezet</targy>
+        <idopont>
+            <nap>szerda</nap>
+            <tol>14_00 </tol>
+            <ig>16_00</ig>
+        </idopont>
+        <helyszin>in_102</helyszin>
+        <oktato>dr_Kovacs_Laszlo</oktato>
+        <szak>mernokinformatika</szak>
+    </ora>
+    
+    <ora id="o10" tipus="eloadas">
+        <targy>mesterseges_inteligencia</targy>
+        <idopont>
+            <nap>szerda</nap>
+            <tol>16_00 </tol>
+            <ig>18_00</ig>
+        </idopont>
+        <helyszin>XXXII_a1_mfsz</helyszin>
+        <oktato>Kunne_dr_Tamasi_Judit</oktato>
+        <szak>mernokinformatika</szak>
+    </ora>
+</xvg56e_orarend>

@@ -1,40 +1,51 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<kurzus_felvetel>
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Neptunkod_kurzusfelvetel SYSTEM "XVG56E_kurzusfelvetel.dtd">
+<Neptunkod_kurzusfelvetel tanev="2024/2025" egyetem="BME">
     <hallgato>
-        <nev></nev>
-        <szulev></szulev>
-        <szak evf="5"></szak>
+        <hnev>Lőrinc Ákos</hnev>
+        <szulev>2002</szulev>
+        <szak evf="3">mernokinformatika</szak>
     </hallgato>
     <kurzusok>
-        <kurzus id="xvg56e">
-            <kurzusnev id=""></kurzusnev>
-            <kredit></kredit>
-            <hely jovahagyas=""></hely>
-            <idopont></idopont>
-            <oktato></oktato>
+        <kurzus id="ABC123">
+            <kurzusnev>Web Technologiak 1</kurzusnev>
+            <kredit>5</kredit>
+            <hely>I_A2_fsz</hely>
+            <idopont>Hétfő 10:00 - 12:00</idopont>
+            <oktato>Dr. Agardi Anita</oktato>
         </kurzus>
-        <kurzus id="xvg56e">
-            <kurzusnev id=""></kurzusnev>
-            <kredit></kredit>
-            <hely jovahagyas=""></hely>
-            <idopont></idopont>
-            <oktato nyelv=""></oktato>
-            <oraado></oraado>
+        <kurzus id="DEF456" jovahagyas="igen" nyelv="angol">
+            <kurzusnev>Mobil Programozási Alapok</kurzusnev>
+            <kredit>5</kredit>
+            <hely>IN_101</hely>
+            <idopont>Hétfő 14:00 - 16:00</idopont>
+            <oraado>Prof. Kis Péter</oraado>
         </kurzus>
-        <kurzus id="xvg56e">
-            <kurzusnev></kurzusnev>
-            <kredit></kredit>
+        <kurzus id="GHI789" jovahagyas="nem" nyelv="magyar">
+            <kurzusnev>Unix Rendszergazda</kurzusnev>
+            <kredit>5</kredit>
+            <hely>IN_202</hely>
+            <idopont>Kedd 17:00 - 19:00</idopont>
+        </kurzus>
+        <kurzus id="JKL012">
+            <kurzusnev>Mesterséges Intelligencia</kurzusnev>
+            <kredit>5</kredit>
+            <hely>X_A1_2em</hely>
+            <idopont></idopont>
+        </kurzus>
+        <kurzus id="ABC789">
+            <kurzusnev>Fizika</kurzusnev>
+            <kredit>5</kredit>
             <hely></hely>
-            <idopont></idopont>
-            <oktato></oktato>
+            <idopont>Kedd 17:00 - 19:00</idopont>
+            <oktato>dr_Pszota_Gábor</oktato>
         </kurzus>
-        <kurzus id="xvg56e">
-            <kurzusnev></kurzusnev>
-            <kredit></kredit>
-            <hely></hely>
-            <idopont></idopont>
-            <oktato></oktato>
-            <oraado></oraado>
+        <kurzus id="DCL012">
+            <kurzusnev>Szamítógép Hálózatok</kurzusnev>
+            <kredit>5</kredit>
+            <hely>XXXIII</hely>
+            <idopont>Heftő 08:00 - 10:00</idopont>
+            <oktato>dr_Kovács_Szilveszter_Dezső</oktato>
         </kurzus>
     </kurzusok>
-</kurzus_felvetel>
+</Neptunkod_kurzusfelvetel>

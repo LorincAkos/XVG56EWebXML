@@ -1,14 +1,16 @@
-<!ELEMENT xvg56e_orarend (ora)*>
+<!ELEMENT xvg56e_orarend (ora*)>
 
 <!ELEMENT ora (targy, idopont, helyszin, oktato, szak)>
 <!ATTLIST ora id ID #REQUIRED>
-<!ATTLIST ora tipus (eloadas | gyakorlat) "eloadas">
+<!ATTLIST ora tipus (eloadas | gyakorlat) #REQUIRED>
 
 <!ELEMENT targy (#PCDATA)>
-<!ELEMENT idopont (nap,tol,ig)>
-    <!ELEMENT nap (#PCDATA)>
-    <!ELEMENT tol (#PCDATA)>
-    <!ELEMENT ig (#PCDATA)>
+
+<!ELEMENT idopont (nap, tol, ig)>
+<!ELEMENT nap (#PCDATA)>
+<!ELEMENT tol (#PCDATA)>
+<!ELEMENT ig (#PCDATA)>
+
 <!ELEMENT helyszin (#PCDATA)>
 <!ELEMENT oktato (#PCDATA)>
 <!ELEMENT szak (#PCDATA)>
