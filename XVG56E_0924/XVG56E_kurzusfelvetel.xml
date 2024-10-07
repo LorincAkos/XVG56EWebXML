@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kurzus_felvetel>
+    <hallgato>
+        <nev></nev>
+        <szulev></szulev>
+        <szak evf="5"></szak>
+    </hallgato>
+    <kurzusok>
+        <kurzus id="xvg56e">
+            <kurzusnev id=""></kurzusnev>
+            <kredit></kredit>
+            <hely jovahagyas=""></hely>
+            <idopont></idopont>
+            <oktato></oktato>
+        </kurzus>
+        <kurzus id="xvg56e">
+            <kurzusnev id=""></kurzusnev>
+            <kredit></kredit>
+            <hely jovahagyas=""></hely>
+            <idopont></idopont>
+            <oktato nyelv=""></oktato>
+            <oraado></oraado>
+        </kurzus>
+        <kurzus id="xvg56e">
+            <kurzusnev></kurzusnev>
+            <kredit></kredit>
+            <hely></hely>
+            <idopont></idopont>
+            <oktato></oktato>
+        </kurzus>
+        <kurzus id="xvg56e">
+            <kurzusnev></kurzusnev>
+            <kredit></kredit>
+            <hely></hely>
+            <idopont></idopont>
+            <oktato></oktato>
+            <oraado></oraado>
+        </kurzus>
+    </kurzusok>
+</kurzus_felvetel>
