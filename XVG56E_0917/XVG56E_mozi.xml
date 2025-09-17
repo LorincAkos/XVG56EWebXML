@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<mozi>
+    <film id="txn_nxm_2jb" mufaj="horror">
+        <rendezo id="nzk_4xm_2jb" nev="alex"/>
+        <szinesz id="u5g_4xm_2jb" nev="Madison_Ivy"/>
+        <szinesz id="a">
+            <gyerekszinesz />
+            <musicalszinesz />
+            <szinkronszinesz />
+        </szinesz>
+        <iro id="trv_4xm_2jb"/>
+    </film>
+
+    <film id="asd_123" mufaj="fantasy">
+        <rendezo id="r1" nev="John">
+            <dij tipus="Oscar"/>
+            <orszag nev="USA"/>
+        </rendezo>
+        <rendezo id="r2" nev="Jade">
+            <dij tipus="Golden_Globe"/>
+            <orszag nev="UK"/>
+        </rendezo>
+        <iro id="w1" nev="Mark">
+            <nem nev="ferfi"/>
+            <konyv cim="Üvöltő szelek"/>
+        </iro>
+        <iro id="w2" nev="Emily_Brontë">
+            <nem nev="no"/>
+            <konyv cim="Versek"/>
+        </iro>
+    </film>
+</mozi>
