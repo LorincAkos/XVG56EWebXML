@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xvg56e_orarend 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="XVG56E_orarend.xsd">
+    <ora id="01" tipus="eloadas">
+        <targy>Elektrotechnika-elektronika</targy>
+        <idopont>
+            <nap>hetfo</nap>
+            <tol>8_00</tol>
+            <ig>10_00</ig>
+        </idopont>
+        <helyszin>III.ea</helyszin>
+        <oktato>Szabó Norbert István</oktato>
+        <szak>mernokinformatika</szak>
+    </ora>
+
+    <ora id="02" tipus="gyakorlat">
+        <targy>Korszeru informacios technologiak</targy>
+        <idopont>
+            <nap>kedd</nap>
+            <tol>8_00</tol>
+            <ig>10_00</ig>
+        </idopont>
+        <helyszin>In/103</helyszin>
+        <oktato>Soós Róbert</oktato>
+        <szak>mernokinformatika</szak>
+    </ora>
+
+    <ora id="03" tipus="eloadas">
+        <targy>Korszeru informacios technologiak</targy>
+        <idopont>
+            <nap>kedd</nap>
+            <tol>10_00</tol>
+            <ig>12_00</ig>
+        </idopont>
+        <helyszin>In/101</helyszin>
+        <oktato>Árvai László Lajos</oktato>
+        <szak>mernokinformatika</szak>
+    </ora>
+
+    
+    <ora id="04" tipus="gyakorlat">
+        <targy>Elektrotechnika-elektronika</targy>
+        <idopont>
+            <nap>kedd</nap>
+            <tol>12_00</tol>
+            <ig>14_00</ig>
+        </idopont>
+        <helyszin>A1/317</helyszin>
+        <oktato>Szabó Norbert István</oktato>
+        <szak>mernokinformatika</szak>
+    </ora>
+
+    <ora id="05" tipus="eloadas">
+        <targy>Web-es alkamazasok (Java)</targy>
+        <idopont>
+            <nap>kedd</nap>
+            <tol>16_00</tol>
+            <ig>18_00</ig>
+        </idopont>
+        <helyszin>online</helyszin>
+        <oktato>Dr. Barabas Peter</oktato>
+        <szak>mernokinformatika</szak>
+    </ora>
+
+    <ora id="06" tipus="gyakorlat">
+        <targy>Web-es alkamazasok (Java)</targy>
+        <idopont>
+            <nap>kedd</nap>
+            <tol>18_00</tol>
+            <ig>20_00</ig>
+        </idopont>
+        <helyszin>online</helyszin>
+        <oktato>Dr. Barabas Peter</oktato>
+        <szak>mernokinformatika</szak>
+    </ora>
+
+    
+    <ora id="07" tipus="eloadas">
+        <targy>Webes adatkezelo kornyezetek</targy>
+        <idopont>
+            <nap>szerda</nap>
+            <tol>8_00</tol>
+            <ig>10_00</ig>
+        </idopont>
+        <helyszin>A1/310</helyszin>
+        <oktato>Dr. Kovacs Laszlo Jozsef</oktato>
+        <szak>mernokinformatika</szak>
+    </ora>
+    
+    <ora id="08" tipus="gyakorlat">
+        <targy>Webes adatkezelo kornyezetek</targy>
+        <idopont>
+            <nap>szerda</nap>
+            <tol>10_00</tol>
+            <ig>12_00</ig>
+        </idopont>
+        <helyszin>In/103</helyszin>
+        <oktato>Dr. Bednarik Laszlo</oktato>
+        <szak>mernokinformatika</szak>
+    </ora>
+
+    
+    <ora id="09" tipus="gyakorlat">
+        <targy>Szoftverteszteles</targy>
+        <idopont>
+            <nap>paratlan csutortok</nap>
+            <tol>10_00</tol>
+            <ig>14_00</ig>
+        </idopont>
+        <helyszin>In/103</helyszin>
+        <oktato>Dr. Hornyak Olliver</oktato>
+        <szak>mernokinformatika</szak>
+    </ora>
+</xvg56e_orarend>

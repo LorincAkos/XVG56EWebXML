@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="unqualified"
+           attributeFormDefault="unqualified">
+
+  <xs:simpleType name="oraTipusTipus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="eloadas"/>
+      <xs:enumeration value="gyakorlat"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="oraIdType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="\d{2}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="napType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="(paratlan )?(hetfo|kedd|szerda|csutortok|pentek)"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="idoType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="\d{1,2}_\d{2}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="szakType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="mernokinformatika"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="idopontType">
+    <xs:sequence>
+      <xs:element name="nap" type="napType"/>
+      <xs:element name="tol" type="idoType"/>
+      <xs:element name="ig"  type="idoType"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="oraType">
+    <xs:sequence>
+      <xs:element name="targy" type="xs:string"/>
+      <xs:element name="idopont" type="idopontType"/>
+      <xs:element name="helyszin" type="xs:string"/>
+      <xs:element name="oktato" type="xs:string"/>
+      <xs:element name="szak" type="szakType"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="oraIdType" use="required"/>
+    <xs:attribute name="tipus" type="oraTipusTipus" use="required"/>
+  </xs:complexType>
+
+  <xs:element name="xvg56e_orarend">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ora" type="oraType" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+
+    <xs:unique name="unique_ora_id">
+      <xs:selector xpath="ora"/>
+      <xs:field xpath="@id"/>
+    </xs:unique>
+  </xs:element>
+
+</xs:schema>
