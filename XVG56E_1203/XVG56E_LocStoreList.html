@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Órarend – LocalStorage</title>
+    <link rel="stylesheet" href="XVG56E_LocStoreList.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Órarend</h1>
+
+    <div class="file-box">
+        <input type="file" id="fileInput" accept="application/json">
+        <button class="btn btn-load" onclick="loadJSON()">Betöltés</button>
+        <button class="btn btn-clear" onclick="clearStorage()">Törlés</button>
+    </div>
+
+    <h2>Lista nézet</h2>
+    <div id="listContainer" class="list-view"></div>
+</div>
+
+<script>
+    const STORAGE_KEY = "orarend";
+
+    function loadJSON() {
+        const file = document.getElementById("fileInput").files[0];
+        if (!file) {
+            alert("Válassz ki egy JSON fájlt!");
+            return;
+        }
+
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            try {
+                const json = JSON.parse(e.target.result);
+
+                const oraLista = json.xvg56e_orarend.ora;
+
+                localStorage.setItem(STORAGE_KEY, JSON.stringify(oraLista));
+
+                alert("Betöltés sikeres!");
+
+                renderViews();
+            } catch (err) {
+                alert("Hibás JSON formátum!");
+            }
+        };
+
+        reader.readAsText(file);
+    }
+
+    function clearStorage() {
+        localStorage.removeItem(STORAGE_KEY);
+        renderViews();
+    }
+
+    function renderViews() {
+        const raw = localStorage.getItem(STORAGE_KEY);
+        const listContainer = document.getElementById("listContainer");
+
+        listContainer.innerHTML = "";
+
+        if (!raw) return;
+
+        const lista = JSON.parse(raw);
+
+        lista.forEach(o => {
+            const div = document.createElement("div");
+            div.className = "card";
+            div.innerHTML = `
+                <h2>${o.targy}</h2>
+                <div><strong>Típus:</strong> ${o.tipus}</div>
+                <div><strong>Nap:</strong> ${o.idopont.nap}</div>
+                <div><strong>Idő:</strong> ${o.idopont.tol} - ${o.idopont.ig}</div>
+                <div><strong>Helyszín:</strong> ${o.helyszin}</div>
+                <div><strong>Oktató:</strong> ${o.oktato}</div>
+                <div><strong>Szak:</strong> ${o.szak}</div>
+            `;
+            listContainer.appendChild(div);
+        });
+
+    }
+
+    document.addEventListener("DOMContentLoaded", renderViews);
+</script>
+
+</body>
+</html>

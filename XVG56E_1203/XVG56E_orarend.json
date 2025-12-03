@@ -1,0 +1,123 @@
+{
+  "xvg56e_orarend": {
+    "ora": [
+      {
+        "id": "01",
+        "tipus": "eloadas",
+        "targy": "Elektrotechnika-elektronika",
+        "idopont": {
+          "nap": "hetfo",
+          "tol": "8_00",
+          "ig": "10_00"
+        },
+        "helyszin": "III.ea",
+        "oktato": "Szabó Norbert István",
+        "szak": "mernokinformatika"
+      },
+      {
+        "id": "02",
+        "tipus": "gyakorlat",
+        "targy": "Korszeru informacios technologiak",
+        "idopont": {
+          "nap": "kedd",
+          "tol": "8_00",
+          "ig": "10_00"
+        },
+        "helyszin": "In/103",
+        "oktato": "Soós Róbert",
+        "szak": "mernokinformatika"
+      },
+      {
+        "id": "03",
+        "tipus": "eloadas",
+        "targy": "Korszeru informacios technologiak",
+        "idopont": {
+          "nap": "kedd",
+          "tol": "10_00",
+          "ig": "12_00"
+        },
+        "helyszin": "In/101",
+        "oktato": "Árvai László Lajos",
+        "szak": "mernokinformatika"
+      },
+      {
+        "id": "04",
+        "tipus": "gyakorlat",
+        "targy": "Elektrotechnika-elektronika",
+        "idopont": {
+          "nap": "kedd",
+          "tol": "12_00",
+          "ig": "14_00"
+        },
+        "helyszin": "A1/317",
+        "oktato": "Szabó Norbert István",
+        "szak": "mernokinformatika"
+      },
+      {
+        "id": "05",
+        "tipus": "eloadas",
+        "targy": "Web-es alkamazasok (Java)",
+        "idopont": {
+          "nap": "kedd",
+          "tol": "16_00",
+          "ig": "18_00"
+        },
+        "helyszin": "online",
+        "oktato": "Dr. Barabas Peter",
+        "szak": "mernokinformatika"
+      },
+      {
+        "id": "06",
+        "tipus": "gyakorlat",
+        "targy": "Web-es alkamazasok (Java)",
+        "idopont": {
+          "nap": "kedd",
+          "tol": "18_00",
+          "ig": "20_00"
+        },
+        "helyszin": "online",
+        "oktato": "Dr. Barabas Peter",
+        "szak": "mernokinformatika"
+      },
+      {
+        "id": "07",
+        "tipus": "eloadas",
+        "targy": "Webes adatkezelo kornyezetek",
+        "idopont": {
+          "nap": "szerda",
+          "tol": "8_00",
+          "ig": "10_00"
+        },
+        "helyszin": "A1/310",
+        "oktato": "Dr. Kovacs Laszlo Jozsef",
+        "szak": "mernokinformatika"
+      },
+      {
+        "id": "08",
+        "tipus": "gyakorlat",
+        "targy": "Webes adatkezelo kornyezetek",
+        "idopont": {
+          "nap": "szerda",
+          "tol": "10_00",
+          "ig": "12_00"
+        },
+        "helyszin": "In/103",
+        "oktato": "Dr. Bednarik Laszlo",
+        "szak": "mernokinformatika"
+      },
+      {
+        "id": "09",
+        "tipus": "gyakorlat",
+        "targy": "Szoftverteszteles",
+        "idopont": {
+          "nap": "paratlan csutortok",
+          "tol": "10_00",
+          "ig": "14_00"
+        },
+        "helyszin": "In/103",
+        "oktato": "Dr. Hornyak Olliver",
+        "szak": "mernokinformatika"
+      }
+    ]
+  }
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Hallgatói adatbázis - LocalStorage</title>
+    <link rel="stylesheet" href="XVG56E_LocStoreDB.css">
+    <script src="XVG56E_LocStoreDB.js">
+    </script>
+</head>
+<body>
+<div class="container">
+    <h1>Hallgatói adatbázis – LocalStorage</h1>
+
+    <section>
+        <h2>Új</h2>
+        <form id="studentForm">
+            <div>
+                <label for="nev">Név</label>
+                <input type="text" id="nev" required>
+            </div>
+            <div>
+                <label for="evfolyam">Évfolyam</label>
+                <input type="number" id="evfolyam" min="1" max="10" required>
+            </div>
+            <div>
+                <label for="szak">Szak</label>
+                <input type="text" id="szak" required>
+            </div>
+            <div>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" required>
+            </div>
+            <div>
+                <label for="neptunkod">Neptun-kód</label>
+                <input type="text" id="neptunkod" maxlength="6" required>
+            </div>
+            <div class="buttons-row">
+                <input type="hidden" id="editIndex" value="">
+                <button type="submit" id="saveBtn">Mentés</button>
+                <button type="button" class="secondary" id="resetBtn">Űrlap törlése</button>
+                <span class="info" id="editInfo"></span>
+            </div>
+        </form>
+    </section>
+
+    <section>
+        <h2>Keresés és rendezés</h2>
+        <div class="toolbar">
+            <div class="toolbar-group">
+                <label for="searchText"><strong>Keresés:</strong></label>
+                <input type="text" id="searchText" placeholder="Szűrés név, évfolyam, szak, email, Neptun alapján…">
+                <select id="searchField">
+                    <option value="all">Összes mező</option>
+                    <option value="nev">Név</option>
+                    <option value="evfolyam">Évfolyam</option>
+                    <option value="szak">Szak</option>
+                    <option value="email">E-mail</option>
+                    <option value="neptunkod">Neptun-kód</option>
+                </select>
+            </div>
+            <div class="toolbar-group">
+                <span><strong>Rendezés:</strong></span>
+                <button type="button" class="sort-btn" data-field="nev" id="sortNevBtn">
+                    Név <span class="sort-indicator" id="sortNevInd"></span>
+                </button>
+                <button type="button" class="sort-btn" data-field="evfolyam" id="sortEvfolyamBtn">
+                    Évfolyam <span class="sort-indicator" id="sortEvfolyamInd"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="json-section">
+        <h2>JSON Export / Import</h2>
+        <div class="toolbar-group">
+            <button type="button" id="exportBtn">Export JSON</button>
+            <input type="file" id="importFile" accept="application/json">
+            <button type="button" class="secondary" id="importBtn">Import JSON</button>
+        </div>
+    </section>
+
+    <section>
+        <h2>Hallgatók listája</h2>
+        <table id="studentsTable">
+            <thead>
+            <tr>
+                <th>Név</th>
+                <th>Évfolyam</th>
+                <th>Szak</th>
+                <th>E-mail</th>
+                <th>Neptun-kód</th>
+                <th>Művelet</th>
+            </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </section>
+</div>
+
+<script>
+   </script>
+</body>
+</html>

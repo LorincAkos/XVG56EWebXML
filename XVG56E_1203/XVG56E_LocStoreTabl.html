@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Órarend – LocalStorage</title>
+    <link rel="stylesheet" href="XVG56E_LocStoreList.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Órarend</h1>
+
+    <div class="file-box">
+        <input type="file" id="fileInput" accept="application/json">
+        <button class="btn btn-load" onclick="loadJSON()">Betöltés</button>
+        <button class="btn btn-clear" onclick="clearStorage()">Törlés</button>
+    </div>
+
+    <h2>Táblázat nézet</h2>
+    <table id="tableView">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Típus</th>
+            <th>Tárgy</th>
+            <th>Nap</th>
+            <th>Tól</th>
+            <th>Ig</th>
+            <th>Helyszín</th>
+            <th>Oktató</th>
+            <th>Szak</th>
+        </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+
+<script>
+    const STORAGE_KEY = "orarend";
+
+    function loadJSON() {
+        const file = document.getElementById("fileInput").files[0];
+        if (!file) {
+            alert("Válassz ki egy JSON fájlt!");
+            return;
+        }
+
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            try {
+                const json = JSON.parse(e.target.result);
+
+                const oraLista = json.xvg56e_orarend.ora;
+
+                localStorage.setItem(STORAGE_KEY, JSON.stringify(oraLista));
+
+                alert("Betöltés sikeres!");
+
+                renderViews();
+            } catch (err) {
+                alert("Hibás JSON formátum!");
+            }
+        };
+
+        reader.readAsText(file);
+    }
+
+    function clearStorage() {
+        localStorage.removeItem(STORAGE_KEY);
+        renderViews();
+    }
+
+    function renderViews() {
+        const raw = localStorage.getItem(STORAGE_KEY);
+        const tableBody = document.querySelector("#tableView tbody");
+
+        tableBody.innerHTML = "";
+
+        if (!raw) return;
+
+        const lista = JSON.parse(raw);
+
+        lista.forEach(o => {
+            const tr = document.createElement("tr");
+            tr.innerHTML = `
+                <td>${o.id}</td>
+                <td>${o.tipus}</td>
+                <td>${o.targy}</td>
+                <td>${o.idopont.nap}</td>
+                <td>${o.idopont.tol}</td>
+                <td>${o.idopont.ig}</td>
+                <td>${o.helyszin}</td>
+                <td>${o.oktato}</td>
+                <td>${o.szak}</td>
+            `;
+            tableBody.appendChild(tr);
+        });
+    }
+
+    document.addEventListener("DOMContentLoaded", renderViews);
+</script>
+
+</body>
+</html>
