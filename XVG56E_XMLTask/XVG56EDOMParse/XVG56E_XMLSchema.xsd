@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- Egyszerű Típusok -->
+    <xs:element name="myList">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="felhasznalo" type="felhasznaloTipus" maxOccurs="unbounded"/>
+                <xs:element name="osszefoglalo" type="osszefoglaloTipus" maxOccurs="unbounded"/>
+                <xs:element name="studio" type="studioTipus" maxOccurs="unbounded"/>
+                <xs:element name="anime" type="animeTipus" maxOccurs="unbounded"/>
+                <xs:element name="karakter" type="karakterTipus" maxOccurs="unbounded"/>
+                <xs:element name="megjelenes" type="megjelenesTipus" maxOccurs="unbounded"/>
+                <xs:element name="mufaj" type="mufajTipus" maxOccurs="unbounded"/>
+                <xs:element name="animemufaj" type="animeMufajTipus" maxOccurs="unbounded"/>
+                <xs:element name="sajatlista" type="sajatListaTipus" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+
+        <!-- Kulcsok -->
+        <xs:key name="felhasznalo_kulcs">
+            <xs:selector xpath="felhasznalo"/>
+            <xs:field xpath="@fkod"/>
+        </xs:key>
+
+        <xs:key name="osszefoglalo_kulcs">
+            <xs:selector xpath="osszefoglalo"/>
+            <xs:field xpath="@okod"/>
+        </xs:key>
+
+        <xs:key name="studio_kulcs">
+            <xs:selector xpath="studio"/>
+            <xs:field xpath="@skod"/>
+        </xs:key>
+
+        <xs:key name="anime_kulcs">
+            <xs:selector xpath="anime"/>
+            <xs:field xpath="@akod"/>
+        </xs:key>
+
+        <xs:key name="karakter_kulcs">
+            <xs:selector xpath="karakter"/>
+            <xs:field xpath="@kkod"/>
+        </xs:key>
+
+        <xs:key name="mufaj_kulcs">
+            <xs:selector xpath="mufaj"/>
+            <xs:field xpath="@mkod"/>
+        </xs:key>
+
+        <!-- Idegen kulcsok -->
+        <xs:keyref refer="felhasznalo_kulcs" name="felhasznalo_osszefoglalo_idegen_kulcs">
+            <xs:selector xpath="osszefoglalo"/>
+            <xs:field xpath="@o_f"/>
+        </xs:keyref>
+
+        <xs:keyref refer="studio_kulcs" name="studio_anime_idegen_kulcs">
+            <xs:selector xpath="anime"/>
+            <xs:field xpath="@a_s"/>
+        </xs:keyref>
+
+        <xs:keyref refer="anime_kulcs" name="anime_megjelenes_idegen_kulcs">
+            <xs:selector xpath="megjelenes"/>
+            <xs:field xpath="@a_k_a"/>
+        </xs:keyref>
+
+        <xs:keyref refer="karakter_kulcs" name="karakter_megjelenes_idegen_kulcs">
+            <xs:selector xpath="megjelenes"/>
+            <xs:field xpath="@a_k_k"/>
+        </xs:keyref>
+
+        <xs:keyref refer="anime_kulcs" name="anime_animemufaj_idegen_kulcs">
+            <xs:selector xpath="animemufaj"/>
+            <xs:field xpath="@a_m_a"/>
+        </xs:keyref>
+
+        <xs:keyref refer="mufaj_kulcs" name="mufaj_animemufaj_idegen_kulcs">
+            <xs:selector xpath="animemufaj"/>
+            <xs:field xpath="@a_m_m"/>
+        </xs:keyref>
+
+        <xs:keyref refer="felhasznalo_kulcs" name="felhasznalo_sajatlista_idegen_kulcs">
+            <xs:selector xpath="sajatlista"/>
+            <xs:field xpath="@f_a_f"/>
+        </xs:keyref>
+
+        <xs:keyref refer="anime_kulcs" name="anime_sajatlista_idegen_kulcs">
+            <xs:selector xpath="sajatlista"/>
+            <xs:field xpath="@f_a_a"/>
+        </xs:keyref>
+
+        <!-- Az 1:1 kapcsolat megvalósításához-->
+
+        <xs:unique name="unique_osszefoglalo">
+            <xs:selector xpath="osszefoglalo"></xs:selector>
+            <xs:field xpath="@o_f"></xs:field>
+        </xs:unique>
+    </xs:element>
+
+    <!-- Komplex Típusok-->
+    <xs:complexType name="felhasznaloTipus">
+        <xs:sequence>
+            <xs:element name="nev" type="xs:string"/>
+            <xs:element name="email" type="xs:string"/>
+            <xs:element name="regisztracio" type="xs:string"/>
+            <xs:element name="kedvencmufaj" type="xs:string" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="fkod" type="xs:string" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="osszefoglaloTipus">
+        <xs:sequence>
+            <xs:element name="totalanime" type="xs:int"/>
+            <xs:element name="atlagpont" type="xs:int"/>
+            <xs:element name="utolsofrissites" type="xs:string"/>
+            <xs:element name="totalido" type="xs:int"/>
+        </xs:sequence>
+        <xs:attribute name="okod" type="xs:string" use="required"/>
+        <xs:attribute name="o_f" type="xs:string" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="studioTipus">
+        <xs:sequence>
+            <xs:element name="nev" type="xs:string"/>
+            <xs:element name="orszag" type="xs:string"/>
+            <xs:element name="alapitas" type="xs:string"/>
+            <xs:element name="projektek" type="xs:int"/>
+        </xs:sequence>
+        <xs:attribute name="skod" type="xs:string" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="animeTipus">
+        <xs:sequence>
+            <xs:element name="cim" type="xs:string"/>
+            <xs:element name="tipus" type="xs:string"/>
+            <xs:element name="kezdes" type="xs:string"/>
+            <xs:element name="befejezes" type="xs:string"/>
+            <xs:element name="epizod" type="xs:int"/>
+        </xs:sequence>
+        <xs:attribute name="akod" type="xs:string" use="required"/>
+        <xs:attribute name="a_s" type="xs:string" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="karakterTipus">
+        <xs:sequence>
+            <xs:element name="nev" type="karakterNevTipus"/>
+            <xs:element name="kor" type="xs:int"/>
+            <xs:element name="nem" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="kkod" type="xs:string" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="karakterNevTipus">
+        <xs:sequence>
+            <xs:element name="csaladnev" type="xs:string"/>
+            <xs:element name="keresztnev" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="megjelenesTipus">
+        <xs:sequence>
+            <xs:element name="szerep" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="a_k_a" type="xs:string" use="required"/>
+        <xs:attribute name="a_k_k" type="xs:string" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="mufajTipus">
+        <xs:sequence>
+            <xs:element name="nev" type="xs:string"/>
+            <xs:element name="leiras" type="xs:string"/>
+            <xs:element name="felnott" type="xs:boolean"/>
+            <xs:element name="nepszerusegrang" type="xs:int"/>
+        </xs:sequence>
+        <xs:attribute name="mkod" type="xs:string" use="required"/>
+    </xs:complexType>
+    
+    <xs:complexType name="animeMufajTipus">
+        <xs:sequence>
+            <xs:element name="elsodleges" type="xs:boolean"/>
+        </xs:sequence>
+        <xs:attribute name="a_m_a" type="xs:string" use="required"/>
+        <xs:attribute name="a_m_m" type="xs:string" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="sajatListaTipus">
+        <xs:sequence>
+            <xs:element name="statusz" type="xs:string"/>
+            <xs:element name="pontszam" type="xs:int"/>
+        </xs:sequence>
+        <xs:attribute name="f_a_a" type="xs:string" use="required"/>
+        <xs:attribute name="f_a_f" type="xs:string" use="required"/>
+    </xs:complexType>
+</xs:schema>

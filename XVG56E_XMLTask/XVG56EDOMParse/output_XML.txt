@@ -1,0 +1,203 @@
+Gyökérelem: myList
+
+==== FELHASZNÁLÓK ====
+Felhasználó kód: f1
+  Név: LAkos
+  Email: LAkos@email.com
+  Regisztráció: 2017.06.17
+  Kedvenc műfajok:
+    - Akció
+    - Fantasy
+    - Horror
+
+Felhasználó kód: f2
+  Név: Lali01
+  Email: Lali01@email.com
+  Regisztráció: 2020.04.03
+  Kedvenc műfajok:
+    - Komédia
+
+Felhasználó kód: f3
+  Név: User2
+  Email: User2@email.com
+  Regisztráció: 2022.01.29
+  Kedvenc műfajok:
+    - Fantasy
+    - Komédia
+
+
+==== ÖSSZEFOGLALÓK ====
+Összefoglaló kód: o1 (felhasználó: f1)
+  Összes anime: 154
+  Átlagpont: 8
+  Utolsó frissítés: 2025.08.14
+  Összes idő (óra): 740
+
+Összefoglaló kód: o2 (felhasználó: f2)
+  Összes anime: 76
+  Átlagpont: 7
+  Utolsó frissítés: 2025.03.19
+  Összes idő (óra): 365
+
+Összefoglaló kód: o3 (felhasználó: f3)
+  Összes anime: 32
+  Átlagpont: 9
+  Utolsó frissítés: 2024.12.28
+  Összes idő (óra): 152
+
+
+==== STÚDIÓK ====
+Stúdió kód: s1
+  Név: Madhouse
+  Ország: Japán
+  Alapítás: 1972.10.17
+  Projektek száma: 397
+
+Stúdió kód: s2
+  Név: Mappa
+  Ország: Japán
+  Alapítás: 2011.06.14
+  Projektek száma: 110
+
+Stúdió kód: s3
+  Név: A-1 Pictures
+  Ország: Japán
+  Alapítás: 2005.05.09
+  Projektek száma: 216
+
+
+==== ANIMEK ====
+Anime kód: a1 (stúdió: s1)
+  Cím: Attack on Titan
+  Típus: TV
+  Kezdés: 2013.04.07
+  Befejezés: 2013.09.29
+  Epizódok: 24
+
+Anime kód: a2 (stúdió: s2)
+  Cím: Tokyo Ghoul
+  Típus: OVA
+  Kezdés: 2014.07.04
+  Befejezés: 2014.09.19
+  Epizódok: 12
+
+Anime kód: a3 (stúdió: s2)
+  Cím: KonoSuba
+  Típus: Film
+  Kezdés: 2019.08.30
+  Befejezés: 2019.08.30
+  Epizódok: 1
+
+
+==== KARAKTEREK ====
+Karakter kód: k1
+  Név: Jager Eren
+  Kor: 18
+  Nem: Férfi
+
+Karakter kód: k2
+  Név: Ackerman Mikasa
+  Kor: 17
+  Nem: Nő
+
+Karakter kód: k3
+  Név: Kaneki Ken
+  Kor: 20
+  Nem: Férfi
+
+Karakter kód: k4
+  Név: Kirisima Touka
+  Kor: 19
+  Nem: Nő
+
+Karakter kód: k5
+  Név: Satou Kazuma
+  Kor: 17
+  Nem: Férfi
+
+
+==== MEGJELENÉSEK ====
+Anime: a1 - Karakter: k1
+  Szerep: Főszerep
+
+Anime: a1 - Karakter: k2
+  Szerep: Mellékszerep
+
+Anime: a2 - Karakter: k3
+  Szerep: Főszerep
+
+Anime: a2 - Karakter: k4
+  Szerep: Mellékszerep
+
+Anime: a3 - Karakter: k5
+  Szerep: Főszerep
+
+
+==== MŰFAJOK ====
+Műfaj kód: m1
+  Név: Akció
+  Leírás: 
+  Felnőtt tartalom: false
+  Népszerűségi rang: 2
+
+Műfaj kód: m2
+  Név: Fantasy
+  Leírás: 
+  Felnőtt tartalom: false
+  Népszerűségi rang: 1
+
+Műfaj kód: m3
+  Név: Horror
+  Leírás: 
+  Felnőtt tartalom: true
+  Népszerűségi rang: 4
+
+Műfaj kód: m4
+  Név: Komédia
+  Leírás: 
+  Felnőtt tartalom: false
+  Népszerűségi rang: 3
+
+
+==== ANIME–MŰFAJ ====
+Anime: a1 - Műfaj: m1
+  Elsődleges: true
+
+Anime: a1 - Műfaj: m2
+  Elsődleges: false
+
+Anime: a2 - Műfaj: m3
+  Elsődleges: true
+
+Anime: a2 - Műfaj: m2
+  Elsődleges: false
+
+Anime: a3 - Műfaj: m2
+  Elsődleges: true
+
+Anime: a3 - Műfaj: m4
+  Elsődleges: false
+
+
+==== SAJÁT LISTA ====
+Felhasználó: f1 - Anime: a1
+  Státusz: Befejezett
+  Pontszám: 8
+
+Felhasználó: f2 - Anime: a1
+  Státusz: Megtekintés
+  Pontszám: 7
+
+Felhasználó: f2 - Anime: a2
+  Státusz: Befejezett
+  Pontszám: 9
+
+Felhasználó: f3 - Anime: a2
+  Státusz: Befejezett
+  Pontszám: 8
+
+Felhasználó: f1 - Anime: a3
+  Státusz: Tervezett
+  Pontszám: 8
+
+

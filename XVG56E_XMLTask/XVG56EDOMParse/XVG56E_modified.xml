@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<myList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="XVG56E_XMLSchema.xsd">
+      
+  <!-- Felhasználók -->
+      
+  <felhasznalo fkod="f1">
+            
+    <nev>LAkos</nev>
+            
+    <email>uj_email@example.com</email>
+            
+    <regisztracio>2017.06.17</regisztracio>
+            
+    <kedvencmufaj>Akció</kedvencmufaj>
+            
+    <kedvencmufaj>Fantasy</kedvencmufaj>
+            
+    <kedvencmufaj>Horror</kedvencmufaj>
+        
+  </felhasznalo>
+      
+  <felhasznalo fkod="f2">
+            
+    <nev>Lali01</nev>
+            
+    <email>Lali01@email.com</email>
+            
+    <regisztracio>2020.04.03</regisztracio>
+            
+    <kedvencmufaj>Komédia</kedvencmufaj>
+        
+    <kedvencmufaj>Horror</kedvencmufaj>
+  </felhasznalo>
+      
+  <felhasznalo fkod="f3">
+            
+    <nev>User2</nev>
+            
+    <email>User2@email.com</email>
+            
+    <regisztracio>2022.01.29</regisztracio>
+            
+    <kedvencmufaj>Fantasy</kedvencmufaj>
+            
+    <kedvencmufaj>Komédia</kedvencmufaj>
+        
+  </felhasznalo>
+      
+  <!-- Felhasználó összefoglaló  -->
+      
+  <osszefoglalo o_f="f1" okod="o1">
+            
+    <totalanime>154</totalanime>
+            
+    <atlagpont>8</atlagpont>
+            
+    <utolsofrissites>2025.08.14</utolsofrissites>
+            
+    <totalido>740</totalido>
+        
+  </osszefoglalo>
+      
+  <osszefoglalo o_f="f2" okod="o2">
+            
+    <totalanime>76</totalanime>
+            
+    <atlagpont>7</atlagpont>
+            
+    <utolsofrissites>2025.03.19</utolsofrissites>
+            
+    <totalido>365</totalido>
+        
+  </osszefoglalo>
+      
+  <osszefoglalo o_f="f3" okod="o3">
+            
+    <totalanime>32</totalanime>
+            
+    <atlagpont>9</atlagpont>
+            
+    <utolsofrissites>2024.12.28</utolsofrissites>
+            
+    <totalido>152</totalido>
+        
+  </osszefoglalo>
+      
+  <!-- Studió-->
+      
+  <studio skod="s1">
+            
+    <nev>Madhouse</nev>
+            
+    <orszag>Japán</orszag>
+            
+    <alapitas>1972.10.17</alapitas>
+            
+    <projektek>397</projektek>
+        
+  </studio>
+      
+  <studio skod="s2">
+            
+    <nev>Mappa</nev>
+            
+    <orszag>Japán</orszag>
+            
+    <alapitas>2011.06.14</alapitas>
+            
+    <projektek>110</projektek>
+        
+  </studio>
+      
+  <studio skod="s3">
+            
+    <nev>A-1 Pictures</nev>
+            
+    <orszag>Japán</orszag>
+            
+    <alapitas>2005.05.09</alapitas>
+            
+    <projektek>216</projektek>
+        
+  </studio>
+      
+  <!-- Anime -->
+      
+  <anime a_s="s1" akod="a1">
+            
+    <cim>Attack on Titan</cim>
+            
+    <tipus>TV</tipus>
+            
+    <kezdes>2013.04.07</kezdes>
+            
+    <befejezes>2013.09.29</befejezes>
+            
+    <epizod>24</epizod>
+        
+  </anime>
+      
+  <anime a_s="s2" akod="a2">
+            
+    <cim>Tokyo Ghoul</cim>
+            
+    <tipus>OVA</tipus>
+            
+    <kezdes>2014.07.04</kezdes>
+            
+    <befejezes>2014.09.19</befejezes>
+            
+    <epizod>12</epizod>
+        
+  </anime>
+      
+  <anime a_s="s2" akod="a3">
+            
+    <cim>KonoSuba</cim>
+            
+    <tipus>Film</tipus>
+            
+    <kezdes>2019.08.30</kezdes>
+            
+    <befejezes>2019.08.30</befejezes>
+            
+    <epizod>1</epizod>
+        
+  </anime>
+      
+  <!-- Karakter -->
+      
+  <anime a_s="s3" akod="a4">
+    <cim>New Anime Title</cim>
+    <tipus>TV</tipus>
+    <kezdes>2025.01.01</kezdes>
+    <befejezes>2025.03.31</befejezes>
+    <epizod>12</epizod>
+  </anime>
+  <karakter kkod="k1">
+            
+    <nev>
+                  
+      <csaladnev>Jager</csaladnev>
+                  
+      <keresztnev>Eren</keresztnev>
+              
+    </nev>
+            
+    <kor>18</kor>
+            
+    <nem>Férfi</nem>
+        
+  </karakter>
+      
+  <karakter kkod="k2">
+            
+    <nev>
+                  
+      <csaladnev>Ackerman</csaladnev>
+                  
+      <keresztnev>Mikasa</keresztnev>
+              
+    </nev>
+            
+    <kor>17</kor>
+            
+    <nem>Nő</nem>
+        
+  </karakter>
+      
+  <karakter kkod="k3">
+            
+    <nev>
+                  
+      <csaladnev>Kaneki</csaladnev>
+                  
+      <keresztnev>Ken</keresztnev>
+              
+    </nev>
+            
+    <kor>20</kor>
+            
+    <nem>Férfi</nem>
+        
+  </karakter>
+      
+  <karakter kkod="k4">
+            
+    <nev>
+                  
+      <csaladnev>Kirisima</csaladnev>
+                  
+      <keresztnev>Touka</keresztnev>
+              
+    </nev>
+            
+    <kor>19</kor>
+            
+    <nem>Nő</nem>
+        
+  </karakter>
+      
+  <karakter kkod="k5">
+            
+    <nev>
+                  
+      <csaladnev>Satou</csaladnev>
+                  
+      <keresztnev>Kazuma</keresztnev>
+              
+    </nev>
+            
+    <kor>17</kor>
+            
+    <nem>Férfi</nem>
+        
+  </karakter>
+      
+  <!-- Megjelenés -->
+      
+  <megjelenes a_k_a="a1" a_k_k="k1">
+            
+    <szerep>Főszerep</szerep>
+        
+  </megjelenes>
+      
+  <megjelenes a_k_a="a1" a_k_k="k2">
+            
+    <szerep>Mellékszerep</szerep>
+        
+  </megjelenes>
+      
+  <megjelenes a_k_a="a2" a_k_k="k3">
+            
+    <szerep>Főszerep</szerep>
+        
+  </megjelenes>
+      
+  <megjelenes a_k_a="a2" a_k_k="k4">
+            
+    <szerep>Mellékszerep</szerep>
+        
+  </megjelenes>
+      
+  <megjelenes a_k_a="a3" a_k_k="k5">
+            
+    <szerep>Főszerep</szerep>
+        
+  </megjelenes>
+      
+  <!-- Műfaj-->
+      
+  <mufaj mkod="m1">
+            
+    <nev>Akció</nev>
+            
+    <leiras/>
+            
+    <felnott>false</felnott>
+            
+    <nepszerusegrang>2</nepszerusegrang>
+        
+  </mufaj>
+      
+  <mufaj mkod="m2">
+            
+    <nev>Fantasy</nev>
+            
+    <leiras/>
+            
+    <felnott>false</felnott>
+            
+    <nepszerusegrang>1</nepszerusegrang>
+        
+  </mufaj>
+      
+  <mufaj mkod="m3">
+            
+    <nev>Horror</nev>
+            
+    <leiras/>
+            
+    <felnott>true</felnott>
+            
+    <nepszerusegrang>4</nepszerusegrang>
+        
+  </mufaj>
+      
+  <mufaj mkod="m4">
+            
+    <nev>Komédia</nev>
+            
+    <leiras/>
+            
+    <felnott>false</felnott>
+            
+    <nepszerusegrang>3</nepszerusegrang>
+        
+  </mufaj>
+      
+  <!-- AnimeMűfaj -->
+      
+  <animemufaj a_m_a="a1" a_m_m="m1">
+            
+    <elsodleges>true</elsodleges>
+        
+  </animemufaj>
+      
+  <animemufaj a_m_a="a1" a_m_m="m2">
+            
+    <elsodleges>false</elsodleges>
+        
+  </animemufaj>
+      
+  <animemufaj a_m_a="a2" a_m_m="m3">
+            
+    <elsodleges>true</elsodleges>
+        
+  </animemufaj>
+      
+  <animemufaj a_m_a="a2" a_m_m="m2">
+            
+    <elsodleges>false</elsodleges>
+        
+  </animemufaj>
+      
+  <animemufaj a_m_a="a3" a_m_m="m2">
+            
+    <elsodleges>true</elsodleges>
+        
+  </animemufaj>
+      
+  <animemufaj a_m_a="a3" a_m_m="m4">
+            
+    <elsodleges>false</elsodleges>
+        
+  </animemufaj>
+      
+  <!-- SajátLista -->
+      
+  <sajatlista f_a_a="a1" f_a_f="f1">
+            
+    <statusz>Befejezett</statusz>
+            
+    <pontszam>8</pontszam>
+        
+  </sajatlista>
+      
+  <sajatlista f_a_a="a1" f_a_f="f2">
+            
+    <statusz>Megtekintés</statusz>
+            
+    <pontszam>7</pontszam>
+        
+  </sajatlista>
+      
+  <sajatlista f_a_a="a2" f_a_f="f2">
+            
+    <statusz>Befejezett</statusz>
+            
+    <pontszam>10</pontszam>
+        
+  </sajatlista>
+      
+  <sajatlista f_a_a="a2" f_a_f="f3">
+            
+    <statusz>Befejezett</statusz>
+            
+    <pontszam>8</pontszam>
+        
+  </sajatlista>
+      
+  <sajatlista f_a_a="a3" f_a_f="f1">
+            
+    <statusz>Tervezett</statusz>
+            
+    <pontszam>8</pontszam>
+        
+  </sajatlista>
+  
+</myList>
