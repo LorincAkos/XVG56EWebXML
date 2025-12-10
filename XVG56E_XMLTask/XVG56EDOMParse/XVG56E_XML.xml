@@ -160,25 +160,25 @@
     <!-- Műfaj-->
     <mufaj mkod='m1'>
         <nev>Akció</nev>
-        <leiras></leiras>
+        <leiras>Gyors tempójú, látványos harcjelenetekkel és intenzív konfliktusokkal teli műfaj.</leiras>
         <felnott>false</felnott>
         <nepszerusegrang>2</nepszerusegrang>
     </mufaj>
     <mufaj mkod='m2'>
         <nev>Fantasy</nev>
-        <leiras></leiras>
+        <leiras>Mágikus világokkal, természetfeletti lényekkel és hősi kalandokkal foglalkozó műfaj.</leiras>
         <felnott>false</felnott>
         <nepszerusegrang>1</nepszerusegrang>
     </mufaj>
     <mufaj mkod='m3'>
         <nev>Horror</nev>
-        <leiras></leiras>
+        <leiras>Feszült, félelmet keltő történeteket bemutató műfaj, gyakran erős ijesztő elemekkel.</leiras>
         <felnott>true</felnott>
         <nepszerusegrang>4</nepszerusegrang>
     </mufaj>
     <mufaj mkod='m4'>
         <nev>Komédia</nev>
-        <leiras></leiras>
+        <leiras>Könnyed, humoros jelenetekkel és szórakoztató helyzetekkel operáló műfaj.</leiras>
         <felnott>false</felnott>
         <nepszerusegrang>3</nepszerusegrang>
     </mufaj>
