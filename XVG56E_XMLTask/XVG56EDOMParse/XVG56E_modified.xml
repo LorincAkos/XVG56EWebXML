@@ -293,7 +293,7 @@
             
     <nev>Akció</nev>
             
-    <leiras/>
+    <leiras>Gyors tempójú, látványos harcjelenetekkel és intenzív konfliktusokkal teli műfaj.</leiras>
             
     <felnott>false</felnott>
             
@@ -305,7 +305,7 @@
             
     <nev>Fantasy</nev>
             
-    <leiras/>
+    <leiras>Mágikus világokkal, természetfeletti lényekkel és hősi kalandokkal foglalkozó műfaj.</leiras>
             
     <felnott>false</felnott>
             
@@ -317,7 +317,7 @@
             
     <nev>Horror</nev>
             
-    <leiras/>
+    <leiras>Feszült, félelmet keltő történeteket bemutató műfaj, gyakran erős ijesztő elemekkel.</leiras>
             
     <felnott>true</felnott>
             
@@ -329,7 +329,7 @@
             
     <nev>Komédia</nev>
             
-    <leiras/>
+    <leiras>Könnyed, humoros jelenetekkel és szórakoztató helyzetekkel operáló műfaj.</leiras>
             
     <felnott>false</felnott>
             

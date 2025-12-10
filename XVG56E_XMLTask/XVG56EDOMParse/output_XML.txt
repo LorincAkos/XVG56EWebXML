@@ -136,25 +136,25 @@ Anime: a3 - Karakter: k5
 ==== MŰFAJOK ====
 Műfaj kód: m1
   Név: Akció
-  Leírás: 
+  Leírás: Gyors tempójú, látványos harcjelenetekkel és intenzív konfliktusokkal teli műfaj.
   Felnőtt tartalom: false
   Népszerűségi rang: 2
 
 Műfaj kód: m2
   Név: Fantasy
-  Leírás: 
+  Leírás: Mágikus világokkal, természetfeletti lényekkel és hősi kalandokkal foglalkozó műfaj.
   Felnőtt tartalom: false
   Népszerűségi rang: 1
 
 Műfaj kód: m3
   Név: Horror
-  Leírás: 
+  Leírás: Feszült, félelmet keltő történeteket bemutató műfaj, gyakran erős ijesztő elemekkel.
   Felnőtt tartalom: true
   Népszerűségi rang: 4
 
 Műfaj kód: m4
   Név: Komédia
-  Leírás: 
+  Leírás: Könnyed, humoros jelenetekkel és szórakoztató helyzetekkel operáló műfaj.
   Felnőtt tartalom: false
   Népszerűségi rang: 3
 
